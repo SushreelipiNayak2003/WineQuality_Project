@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(122, 25, 55, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(190, 104, 65, 0.18),
+            transparent 35%
+        ),
+        #120b12;
+
+    color: #ffffff;
+}
+
+
+.page-wrapper {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 8, 18, 0.96),
+            rgba(38, 13, 28, 0.94)
+        );
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+
+    padding: 24px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 23px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+.logo-icon {
+    font-size: 29px;
+}
+
+
+.nav-text {
+    color: #b9a8b1;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 75px 7% 45px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(216, 139, 113, 0.35);
+
+    border-radius: 30px;
+
+    background: rgba(153, 49, 79, 0.15);
+
+    color: #e9a58f;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.hero h1 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(45px, 6vw, 76px);
+
+    line-height: 1.05;
+
+    font-weight: 400;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #d88b71;
+
+    font-style: italic;
+}
+
+
+.hero p {
+    max-width: 620px;
+
+    color: #b9aab2;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   WINE GLASS
+========================= */
+
+.wine-glass {
+    width: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    opacity: 0.9;
+}
+
+
+.glass {
+    width: 130px;
+    height: 170px;
+
+    border: 3px solid rgba(255, 255, 255, 0.45);
+
+    border-top: none;
+
+    border-radius: 10px 10px 70px 70px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.wine {
+    position: absolute;
+
+    bottom: 0;
+
+    left: -5%;
+
+    width: 110%;
+    height: 72%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5e102d,
+            #8e2149,
+            #551027
+        );
+
+    border-radius: 50% 50% 0 0;
+}
+
+
+.glass-stem {
+    height: 75px;
+
+    width: 3px;
+
+    background: rgba(255, 255, 255, 0.45);
+}
+
+
+.glass-base {
+    width: 90px;
+    height: 3px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.main-container {
+    max-width: 1100px;
+
+    margin: 20px auto 80px;
+
+    padding: 0 25px;
+}
+
+
+.form-card {
+    padding: 45px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.075),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(20px);
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.card-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 40px;
+}
+
+
+.small-title {
+    color: #d88b71;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.card-heading h2 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+
+.description {
+    color: #998b94;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.quality-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    background: rgba(216, 139, 113, 0.12);
+
+    color: #d88b71;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   INPUT GRID
+========================= */
+
+.input-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 23px;
+}
+
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.input-group label {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 9px;
+
+    color: #e6dce1;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+.input-group label span {
+    color: #81727b;
+
+    font-size: 10px;
+
+    font-weight: 400;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    padding: 15px 17px;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 11px;
+
+    outline: none;
+
+    background: rgba(0, 0, 0, 0.22);
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.input-group input::placeholder {
+    color: #665a62;
+}
+
+
+.input-group input:focus {
+    border-color: #d88b71;
+
+    background: rgba(216, 139, 113, 0.06);
+
+    box-shadow:
+        0 0 0 3px rgba(216, 139, 113, 0.08);
+}
+
+
+/* Remove number arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+    margin: 0;
+}
+
+
+input[type=number] {
+    appearance: textfield;
+}
+
+
+/* =========================
+   PREDICT BUTTON
+========================= */
+
+.predict-button {
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 17px 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8c2447,
+            #b04b5d
+        );
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 12px 30px rgba(113, 28, 57, 0.3);
+}
+
+
+.predict-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 35px rgba(113, 28, 57, 0.4);
+
+    background:
+        linear-gradient(
+            135deg,
+            #a02d51,
+            #c35a68
+        );
+}
+
+
+.predict-button:active {
+    transform: translateY(0);
+}
+
+
+.arrow {
+    font-size: 20px;
+
+    transition: 0.3s ease;
+}
+
+
+.predict-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card {
+    margin-top: 30px;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(91, 26, 49, 0.35),
+            rgba(216, 139, 113, 0.08)
+        );
+
+    border: 1px solid rgba(216, 139, 113, 0.2);
+
+    animation: resultAppear 0.5s ease;
+}
+
+
+@keyframes resultAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+.result-icon {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(216, 139, 113, 0.15);
+
+    color: #e2a38e;
+
+    font-size: 25px;
+
+    border: 1px solid rgba(216, 139, 113, 0.25);
+}
+
+
+.result-label {
+    color: #d88b71;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 4px;
+}
+
+
+.result-content h3 {
+    font-size: 17px;
+
+    font-weight: 500;
+
+    color: #eee4e8;
+}
+
+
+.score {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 45px;
+
+    color: #ffffff;
+
+    margin-top: 2px;
+}
+
+
+.score span {
+    color: #887a82;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+}
+
+
+.result-message {
+    margin-top: 3px;
+
+    font-size: 12px;
+}
+
+
+.excellent {
+    color: #e5ae73;
+}
+
+
+.good {
+    color: #d99a7f;
+}
+
+
+.average {
+    color: #b69da8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+    color: #8c7d86;
+
+    font-size: 12px;
+}
+
+
+.footer-small {
+    margin-top: 8px;
+
+    color: #5f555c;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .wine-glass {
+        display: none;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 25px 35px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .main-container {
+        padding: 0 15px;
+    }
+
+    .form-card {
+        padding: 23px 18px;
+
+        border-radius: 18px;
+    }
+
+    .card-heading h2 {
+        font-size: 30px;
+    }
+
+    .result-card {
+        padding: 20px;
+    }
+
+}
